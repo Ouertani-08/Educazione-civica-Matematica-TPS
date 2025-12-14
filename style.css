@@ -1,17 +1,23 @@
+
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     margin: 0;
     padding: 20px;
 }
-header{
+
+header {
     text-align: center;
     background-color: rgb(11, 113, 172);
     color: white;
     padding: 10px 0;
     margin-bottom: 20px;
-    
 }
+
 footer {
     text-align: center;
     background-color: rgb(11, 113, 172);
@@ -19,36 +25,63 @@ footer {
     padding: 10px 0;
     margin-top: 20px;
 }
+
 h1, h2 {
     text-align: center;
     color: #2c3e50;
 }
+
 #grafico-container {
-    width: 80%;
-    margin: 30px auto;
-    background: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-}
-#tabella-container {
-    width: 60%;
+    width: 100%;
+    max-width: 900px;
     margin: 20px auto;
     background: #fff;
     padding: 15px;
     border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
+
+#tabella-container {
+    width: 100%;
+    max-width: 700px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    overflow-x: auto;
+}
+
 table {
     width: 100%;
     border-collapse: collapse;
 }
+
 th, td {
     border: 1px solid #ccc;
     padding: 8px;
     text-align: center;
 }
+
 th {
     background-color: rgb(11, 113, 172);
     color: #fff;
+}
+canvas {
+    width: 100% !important;
+    height: auto !important;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    h1, h2 {
+        font-size: 1.2rem;
+    }
+
+    header, footer {
+        padding: 8px 0;
+    }
 }
